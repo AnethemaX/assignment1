@@ -1,0 +1,15 @@
+{%load staticfiles%}
+<link rel="stylesheet" type="text/css" href="{% static 'bookmarks/blockquotes.css' %}" />
+
+
+
+<blockquote class='default'>
+    <h1>{{bookmarks.title}}</h1>
+    <h2>
+        <a href={{bookmarks.content}}>{{bookmarks.content}}</a>
+    </h2>
+    <p>{{ bookmarks.desc }}</p>
+</blockquote>
+
+<span><a href="https://assignment1-anethemax.c9.io/list">Go back to bookmarks</a></span>
+
